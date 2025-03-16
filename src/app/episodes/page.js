@@ -26,7 +26,7 @@ export default function Episodes() {
         
         {/* Page Title */}
         <h1 className="text-5xl font-bold neon-text">Episodes</h1>
-        <p className="text-lg text-gray-400 mt-2">Watch our latest furry animations.</p>
+        <p className="text-lg text-gray-400 mt-2 text-center">Watch our latest furry animations.</p>
 
         {/* Episode List */}
         <div className="mt-10 w-full max-w-3xl space-y-8">
@@ -36,7 +36,7 @@ export default function Episodes() {
             <h2 className="text-3xl font-bold text-red-400">The Switch</h2>
 
             {/* Updated Description */}
-            <p className="text-gray-300 mt-2">
+            <p className="text-gray-300 mt-2 text-sm sm:text-base">
               <strong>🌀 The Switch – Episode 1 Animatic</strong><br/>
               📍 <em>Retro-Futuristic 90s | Transformation | Mystery</em><br/><br/>
               When Paw and Belle stumble upon a mysterious <strong>occult toy</strong> in a hidden corner of a <strong>retro-futuristic shop</strong>, curiosity takes over. 
@@ -48,7 +48,7 @@ export default function Episodes() {
             {/* Part 1 - Animatic */}
             <div className="mt-4 relative group w-full max-w-2xl">
               <h3 className="text-xl font-semibold text-yellow-400">Part 1 - Animatic</h3>
-              <p className="text-gray-400">The first look at *The Switch* in animatic form.</p>
+              <p className="text-gray-400 text-sm sm:text-base">The first look at *The Switch* in animatic form.</p>
 
               {/* Thumbnail Container with Effects */}
               <a 
@@ -89,7 +89,7 @@ export default function Episodes() {
             </div>
 
             {/* Future Parts (Placeholder for Now) */}
-            <div className="mt-6 text-gray-500 italic">Part 2 and Part 3 coming soon...</div>
+            <div className="mt-6 text-gray-500 italic text-sm sm:text-base">Part 2 and Part 3 coming soon...</div>
           </div>
 
         </div>

@@ -21,30 +21,30 @@ export default function Home() {
       {/* Navigation Bar */}
       <NavBar />
 
-      {/* Logo with Neon Glow Effect */}
+      {/* Logo with Neon Glow Effect (Responsive) */}
       <img 
         src="/TiltedTailsLogoSMALL.png" 
         alt="Tilted Tails Logo" 
-        className="w-[300px] md:w-[400px] lg:w-[500px] drop-shadow-lg filter contrast-150 brightness-125 
+        className="w-[250px] md:w-[350px] lg:w-[450px] drop-shadow-lg filter contrast-150 brightness-125 
                    animate-pulse-neon mt-16"
       />
 
       {/* Content Wrapper */}
-      <div className="relative z-10 flex flex-col items-center mt-6">
+      <div className="relative z-10 flex flex-col items-center mt-6 px-4">
         {/* Title */}
-        <h1 className="text-5xl font-bold text-white drop-shadow-md">
+        <h1 className="text-4xl md:text-5xl font-bold text-white drop-shadow-md">
           Welcome to <span className="text-red-500">TiltedTails</span>
         </h1>
 
         {/* Subtitle */}
-        <p className="text-lg text-gray-300 mt-3 max-w-xl drop-shadow-md">
+        <p className="text-md md:text-lg text-gray-300 mt-3 max-w-xl drop-shadow-md">
           Your destination for high-quality furry animation.
         </p>
 
-        {/* SubscribeStar Button with Glitch Hover Effect */}
+        {/* SubscribeStar Button with Glitch Hover Effect (Touch-Friendly) */}
         <a href="https://www.subscribestar.adult/" target="_blank" rel="noopener noreferrer"
-          className="mt-6 px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold text-lg rounded-lg shadow-lg transition-all
-          animate-pulse glitch-hover">
+          className="mt-6 px-6 md:px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold text-lg rounded-lg shadow-lg transition-all
+          animate-pulse glitch-hover text-center w-[90%] md:w-auto">
           Support Us on SubscribeStar
         </a>
       </div>
@@ -54,7 +54,7 @@ export default function Home() {
         <div className="flex flex-col items-center space-y-3">
           
           {/* Social Links */}
-          <div className="flex space-x-6">
+          <div className="flex flex-wrap justify-center space-x-4 md:space-x-6">
             <a href="https://twitter.com/tiltedtails" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-all">Twitter</a>
             <a href="https://bsky.app/profile/dewram.bsky.social" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-all">Bluesky</a>
             <a href="https://tiltedtails.social" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-all">Discord</a>

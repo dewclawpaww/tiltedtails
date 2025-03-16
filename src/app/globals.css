@@ -13,7 +13,7 @@
   animation: neonGlow 1.5s infinite alternate;
 }
 
-/* CRT Flicker Effect */
+/* CRT Flicker Effect (Adjusted for Mobile) */
 @keyframes crtFlicker {
   0% { opacity: 0.18; }
   50% { opacity: 0.25; }
@@ -22,6 +22,14 @@
 
 .animate-crt-flicker {
   animation: crtFlicker 0.1s infinite alternate;
+}
+
+/* Reduce CRT flicker on mobile to prevent it being overwhelming */
+@media (max-width: 768px) {
+  .animate-crt-flicker {
+    opacity: 0.12; /* Slightly softer flicker */
+    animation-duration: 0.15s;
+  }
 }
 
 /* Softer Glitchy Hover Effect */
@@ -35,6 +43,70 @@
 
 .glitch-hover:hover {
   animation: glitch 0.3s infinite;
+}
+
+/* Scale Down Elements for Mobile */
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }  /* Smaller headings */
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.25rem; }
+  p { font-size: 1rem; }
+
+  .glitch-hover {
+    font-size: 0.9rem; /* Slightly smaller buttons */
+    padding: 10px 20px;
+  }
+
+  /* Reduce button size */
+  .btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  /* Prevent large images from overflowing */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Make Navigation Responsive */
+@media (max-width: 768px) {
+  .neon-text a {
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+}
+
+/* Center and Scale Logo */
+@media (max-width: 768px) {
+  .logo {
+    width: 70%;
+    max-width: 250px;
+  }
+}
+
+/* Thumbnail Hover Effect (Mobile Adjustments) */
+.thumbnail-container {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.thumbnail-container img {
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.thumbnail-container:hover img {
+  transform: scale(1.05);
 }
 
 /* Neon Text for the Navigation */

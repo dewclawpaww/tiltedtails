@@ -28,11 +28,11 @@ export default function Merch() {
         <h1 className="text-5xl font-bold neon-text">Merch Store</h1>
         <p className="text-lg text-gray-400 mt-2">Exclusive TiltedTails merch is on the way!</p>
 
-        {/* Merch Grid */}
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-5xl">
+        {/* Merch Grid - Adjusted for Mobile */}
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-5xl">
           
           {/* Stickers - Coming Soon */}
-          <div className="border border-gray-700 p-6 rounded-lg bg-gray-900 shadow-lg flex flex-col items-center">
+          <div className="border border-gray-700 p-6 rounded-lg bg-gray-900 shadow-lg flex flex-col items-center transition-transform transform hover:scale-105 hover:shadow-xl">
             <div className="w-full h-48 bg-gray-700 flex items-center justify-center text-gray-400">
               [Sticker Image]
             </div>
@@ -41,7 +41,7 @@ export default function Merch() {
           </div>
 
           {/* Buttons - Coming Soon */}
-          <div className="border border-gray-700 p-6 rounded-lg bg-gray-900 shadow-lg flex flex-col items-center">
+          <div className="border border-gray-700 p-6 rounded-lg bg-gray-900 shadow-lg flex flex-col items-center transition-transform transform hover:scale-105 hover:shadow-xl">
             <div className="w-full h-48 bg-gray-700 flex items-center justify-center text-gray-400">
               [Button Image]
             </div>
@@ -50,7 +50,7 @@ export default function Merch() {
           </div>
 
           {/* Art Books - Coming Soon */}
-          <div className="border border-gray-700 p-6 rounded-lg bg-gray-900 shadow-lg flex flex-col items-center">
+          <div className="border border-gray-700 p-6 rounded-lg bg-gray-900 shadow-lg flex flex-col items-center transition-transform transform hover:scale-105 hover:shadow-xl">
             <div className="w-full h-48 bg-gray-700 flex items-center justify-center text-gray-400">
               [Art Book Image]
             </div>
@@ -58,8 +58,8 @@ export default function Merch() {
             <p className="text-gray-400 mt-2">Coming Soon!</p>
           </div>
 
-          {/* Figurines - Future Plan */}
-          <div className="border border-gray-700 p-6 rounded-lg bg-gray-900 shadow-lg flex flex-col items-center md:col-span-3">
+          {/* Figurines - Future Plan (Now Full-Width on Mobile) */}
+          <div className="border border-gray-700 p-6 rounded-lg bg-gray-900 shadow-lg flex flex-col items-center transition-transform transform hover:scale-105 hover:shadow-xl sm:col-span-2 lg:col-span-3">
             <div className="w-full h-48 bg-gray-700 flex items-center justify-center text-gray-400">
               [Figurine Concept Image]
             </div>
